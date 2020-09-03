@@ -2,8 +2,8 @@ From node:alpine
 
 COPY ./package.json ./
 
-RUN npm install
+RUN sudo npm install
 
 COPY ./ ./
 
-CMD [ "npm" , "start" ]
+CMD sudo npm start
