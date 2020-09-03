@@ -1,9 +1,11 @@
 From node:alpine
 
+USER root
+
 COPY ./package.json ./
 
-RUN sudo npm install
+RUN  npm install
 
 COPY ./ ./
 
-CMD sudo npm start
+CMD  npm start
